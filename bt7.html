@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = [-55,7,12,-17,4,8,-10,26,9,-32];
+    let v = 12;
+    function findNumber(arr) {
+        return arr.indexOf(v);
+    }
+    let check = findNumber(arr1)
+
+    function deleteNumber(arr) {
+        arr.splice(check,1)
+        return arr;
+    }
+
+    let newArray = deleteNumber(arr1);
+    document.write(newArray)
+</script>
+</body>
+</html>
